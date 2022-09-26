@@ -1,0 +1,63 @@
+steps:
+  COUNTRYREGION-543:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      locationID: ""
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5174
+              stepCounter: 543
+            config: {}
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: COUNTRYREGIONCODE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5175
+              stepCounter: 543
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5176
+              stepCounter: 543
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: MODIFIEDDATE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'COUNTRYREGION') }}
+      name: COUNTRYREGION
+      schema: ""
+      sqlType: Source
+      table: COUNTRYREGION
+      type: sourceInput
+    stepCounter: "543"

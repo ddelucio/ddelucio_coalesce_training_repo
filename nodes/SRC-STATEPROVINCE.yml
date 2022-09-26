@@ -1,0 +1,138 @@
+steps:
+  STATEPROVINCE-549:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      locationID: ""
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5207
+              stepCounter: 549
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: STATEPROVINCEID
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5208
+              stepCounter: 549
+            config: {}
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: STATEPROVINCECODE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5209
+              stepCounter: 549
+            config: {}
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: COUNTRYREGIONCODE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5210
+              stepCounter: 549
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: ISONLYSTATEPROVINCEFLAG
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5211
+              stepCounter: 549
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5212
+              stepCounter: 549
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: TERRITORYID
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5213
+              stepCounter: 549
+            config: {}
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: ROWGUID
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5214
+              stepCounter: 549
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: MODIFIEDDATE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'STATEPROVINCE') }}
+      name: STATEPROVINCE
+      schema: ""
+      sqlType: Source
+      table: STATEPROVINCE
+      type: sourceInput
+    stepCounter: "549"

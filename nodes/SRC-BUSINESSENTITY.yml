@@ -1,0 +1,63 @@
+steps:
+  BUSINESSENTITY-539:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      locationID: ""
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5158
+              stepCounter: 539
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: BUSINESSENTITYID
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5159
+              stepCounter: 539
+            config: {}
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: ROWGUID
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5160
+              stepCounter: 539
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: MODIFIEDDATE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'BUSINESSENTITY') }}
+      name: BUSINESSENTITY
+      schema: ""
+      sqlType: Source
+      table: BUSINESSENTITY
+      type: sourceInput
+    stepCounter: "539"
