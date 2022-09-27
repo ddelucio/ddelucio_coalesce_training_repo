@@ -76,7 +76,9 @@ steps:
           - hasNull
           - isDistinct
         sourceMapping:
-          - customSQL:
+          - aliases:
+              BUSINESSENTITY: "539"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC
