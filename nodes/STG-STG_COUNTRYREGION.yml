@@ -1,0 +1,93 @@
+steps:
+  STG_COUNTRYREGION-560:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STG
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: 5297
+              stepCounter: "560"
+            dataType: VARCHAR(3)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: COUNTRYREGIONCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5174
+                    stepCounter: "543"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5298
+              stepCounter: "560"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5175
+                    stepCounter: "543"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5299
+              stepCounter: "560"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MODIFIEDDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5176
+                    stepCounter: "543"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs:
+          - hasNull
+          - isDistinct
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: COUNTRYREGION
+            join:
+              joinCondition: FROM {{ ref('SRC', 'COUNTRYREGION') }} "COUNTRYREGION"
+            name: STG_COUNTRYREGION
+            noLinkRefs: []
+      name: STG_COUNTRYREGION
+      overrideSQL: false
+      schema: ""
+      sqlType: "15"
+      type: sql
+    stepCounter: "560"

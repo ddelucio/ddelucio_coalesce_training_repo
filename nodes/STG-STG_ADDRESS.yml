@@ -1,0 +1,314 @@
+steps:
+  STG_ADDRESS-566:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STG
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: 5340
+              stepCounter: "566"
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PSTG_ADDRESS_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5249
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: 5341
+              stepCounter: "566"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADDRESSID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5250
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5342
+              stepCounter: "566"
+            dataType: VARCHAR(60)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADDRESSLINE1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5251
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5343
+              stepCounter: "566"
+            dataType: VARCHAR(60)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADDRESSLINE2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5252
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5344
+              stepCounter: "566"
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5253
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5345
+              stepCounter: "566"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STATEPROVINCEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5254
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5346
+              stepCounter: "566"
+            dataType: VARCHAR(15)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSTALCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5255
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5347
+              stepCounter: "566"
+            dataType: VARIANT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SPATIALLOCATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5256
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5348
+              stepCounter: "566"
+            dataType: VARCHAR(36)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ROWGUID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5257
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5349
+              stepCounter: "566"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MODIFIEDDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5258
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5350
+              stepCounter: "566"
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_VERSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5259
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5351
+              stepCounter: "566"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_CURRENT_FLAG
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5260
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5352
+              stepCounter: "566"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5261
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5353
+              stepCounter: "566"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5262
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5354
+              stepCounter: "566"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5263
+                    stepCounter: "553"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5355
+              stepCounter: "566"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5264
+                    stepCounter: "553"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs:
+          - hasNull
+          - isDistinct
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: PSL
+                nodeName: PSTG_ADDRESS
+            join:
+              joinCondition: FROM {{ ref('PSL', 'PSTG_ADDRESS') }} "PSTG_ADDRESS"
+            name: STG_ADDRESS
+            noLinkRefs: []
+      name: STG_ADDRESS
+      overrideSQL: false
+      schema: ""
+      sqlType: "15"
+      type: sql
+    stepCounter: "566"

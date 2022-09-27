@@ -1,0 +1,93 @@
+steps:
+  STG_CONTACTTYPE-559:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STG
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: 5294
+              stepCounter: "559"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CONTACTTYPEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5171
+                    stepCounter: "542"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5295
+              stepCounter: "559"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5172
+                    stepCounter: "542"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5296
+              stepCounter: "559"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MODIFIEDDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5173
+                    stepCounter: "542"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs:
+          - hasNull
+          - isDistinct
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: CONTACTTYPE
+            join:
+              joinCondition: FROM {{ ref('SRC', 'CONTACTTYPE') }} "CONTACTTYPE"
+            name: STG_CONTACTTYPE
+            noLinkRefs: []
+      name: STG_CONTACTTYPE
+      overrideSQL: false
+      schema: ""
+      sqlType: "15"
+      type: sql
+    stepCounter: "559"
